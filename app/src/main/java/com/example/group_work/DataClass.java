@@ -1,23 +1,30 @@
 package com.example.group_work;
 
 public class DataClass {
-    private String imageURL, caption;
-    public DataClass(){
+    private String imageUrl;
+    private String imageName;
+
+    public DataClass() {
     }
-    public String getImageURL() {
-        return imageURL;
+
+    public DataClass(String imageUrl, String imageName) {
+        this.imageUrl = imageUrl;
+        this.imageName = imageName;
     }
-    public void setImageURL(String imageURL) {
-        this.imageURL = imageURL;
+
+    public String getImageUrl() {
+        return imageUrl;
     }
-    public String getCaption() {
-        return caption;
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
-    public void setCaption(String caption) {
-        this.caption = caption;
+
+    public String getImageName() {
+        return imageName;
     }
-    public DataClass(String imageURL, String caption) {
-        this.imageURL = imageURL;
-        this.caption = caption;
+
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
     }
 }
